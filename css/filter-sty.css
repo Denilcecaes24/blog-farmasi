@@ -1,0 +1,390 @@
+:root {
+    --color-blue: #3498db; /* Azul */
+    --color-green: #2ecc71; /* Verde */
+    --color-blackgray: #5c5c5c; /* Gris oscuro */
+    --color-black: #000; /* Gris oscuro */
+    --color-white: #fff; /* Gris oscuro */
+    --color-orange-prim: #f3742f; /* Gris oscuro */
+    --color-pink-farmasi: #f95c6d;
+
+  }
+
+#sect3blog{
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.sect3-blog{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    background-color: yelow;
+    border-top: 1px solid #aeaeae;
+    border-bottom: 1px solid #aeaeae;
+
+}
+
+.cont-filt{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-txt-filt {
+    width: 10%;
+    max-width: 100px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.txt-f1{
+    font-size: 16px;
+    font-weight: 400;
+    color: #5c5c5c;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+.box-btns-filt {
+    width: 90%;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+/* Estilos personalizados para cada botón */
+.btn {
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--color-green);
+    color: white;
+    cursor: pointer;
+}
+
+.c1-btn {
+    background-color: transparent;
+    color: black;
+}
+
+.c2-btn {
+    background-color: transparent;
+    color: black;
+}
+
+.c3-btn {
+    background-color: transparent;
+    color: black;
+}
+
+.c4-btn {
+    background-color: transparent;
+    color: black;
+}
+
+.c5-btn {
+    background-color: transparent;
+    color: black;
+}
+
+.c6-btn {
+    background-color: transparent;
+    color: black;
+}
+
+.todos-btn {
+    background-color: transparent;
+    color: black;
+}
+
+/* Estilo para el botón activo */
+.active-filter {
+    background-color: var(--color-pink-farmasi) !important; /* Color de fondo para el botón activo */
+    color: white !important; /* Color del texto */
+    border-color: none !important; /* Color del borde */
+    font-weight: 500;
+}
+
+
+#seccion2{
+    width: 100%;
+    height: auto;
+    padding: 0 0 50px 0;
+}
+
+
+.card-products-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card-products {
+    /*flex: 1 1 350px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    min-width: 290px;
+    height: auto; /* Deja que el contenido determine la altura inicial */
+    margin: 8px 8px;
+    padding: 0 0 5px 0;
+    box-sizing: border-box;
+    border: 1px #d4d4d4 solid;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+.category-label {
+    display: inline-block;
+    background-color: var(--color-pink-farmasi); /* Verde claro */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 8px 16px;
+    font-size: 12px;
+    align-self: start;
+    font-weight: 500;
+}
+
+
+.card-products img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+.card-products .title-art {
+    margin: 0 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: black;
+    padding: 0;
+}
+
+.card-products .desc {
+    margin: 8px 16px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 400;
+    flex-grow: 1; /* Hace que el espacio sobrante lo ocupe el contenido de .desc */
+}
+
+.card-products a {
+    text-decoration: none;
+}
+
+.card-products button {
+    display: block;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: white;
+    background-color: var(--color-pink-farmasi);
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 8px auto;
+}
+
+
+#shopContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch; /* Asegura que todos los divs sean de la misma altura */
+}
+
+
+.pagination-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 0 auto; /* Añade un margen para separar la paginación de los productos */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-button {
+    background-color: #a8a8a8;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.pagination-button.active {
+    background-color: #ebebeb;
+}
+
+
+/*
+#seccion2 .cont_articles{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+}
+
+#seccion2 .art{
+    width: 32%;
+    min-width: 300px;
+    margin: 8px 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#seccion2 .cont_articles .art h3 a{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#seccion2 .art img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#seccion2 .art .cont_pad {
+    width: 100%;
+    height: auto;
+    padding: 16px;
+}
+
+#seccion2 .art .cont_pad div{
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin: 0 0 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+
+#seccion2 .art div span{
+    color: white;
+    background-color: yellowgreen;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+#seccion2 .cont_articles .art .cont_button {
+    width: 100%;
+    margin: 8px 0 0 0;
+    padding: 0;
+}
+
+#seccion2 .cont_articles .art .cont_button button {
+    color: white;
+    background-color: blue;
+    width: 100%;    
+    padding: 10px 15px;
+    margin: 0;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+#seccion2 .art button:hover {
+    color: blue;
+    background-color: white;
+    border: 1px solid blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+*/
+
+
+@media ((min-width: 0) and (max-width: 700px)) {
+
+    .cont-filt {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 16px 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .box-txt-filt {
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .txt-f1{
+        text-align: center;
+    }
+    
+    .box-btns-filt {
+        background-color: ;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        font-size: 15px;
+
+    }
+}

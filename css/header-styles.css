@@ -1,0 +1,383 @@
+:root {
+    --color-pink-farmasi: #f95c6d;
+    --color-black: #000000;
+  }
+
+header {
+    position: relative;
+    z-index: 2;
+    background-color: #f1f1f1;
+
+}
+
+
+header .header-container1 {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+header .header-container1 li {
+    list-style: none;
+}
+
+header .header-container1 a {
+    text-decoration: none;
+
+}
+
+header .header-container2 li {
+    list-style: none;
+}
+
+header .header-container2 a {
+    text-decoration: none;
+
+}
+
+.header-container1 .navbar {
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-container1 .navbar .nav-branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+
+}
+
+.header-container1 .navbar .nav-branding .img_logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.header-container1 .navbar .menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.header-container1 .navbar .menu-wrapper .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/*
+.header-container1 .navbar .menu-wrapper .nav-menu .nav-item a {
+    position: relative;
+    transition: color 0.3s ease-out;
+}
+
+
+.header-container1 .navbar .menu-wrapper .nav-menu .nav-item a:hover {
+   color: orange;
+}
+*/
+
+
+.header-container1 .navbar .menu-wrapper .nav-menu .nav-item .social-icons {
+    position: relative;
+    color: #000000;
+    margin-left: 0;
+    margin-right: 0;
+    transition: color 0.3s;
+}
+
+
+.header-container1 .navbar .menu-wrapper .nav-menu .nav-item .social-icons:hover {
+    color: var(--color-pink-farmasi);
+}
+
+
+.header-container1 .navbar .menu-wrapper .nav-menu .nav-item .btn_registro {
+    position: relative;
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 1px solid var(--color-black);
+    color: white;
+    transition: color 0.3s;
+    background-color: var(--color-black);
+    font-size: 17px;
+
+}
+
+.header-container1 .navbar .menu-wrapper .nav-menu .nav-item .btn_registro:hover {
+    color: white;
+    background-color: var(--color-pink-farmasi);
+    border: 1px solid var(--color-pink-farmasi);
+    text-decoration: underline;
+}
+
+.ic_sty{
+    font-size: 18px;
+}
+
+header .header-container1 .menu-opc {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container1 .menu-opc .options{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.header-container1 .menu-opc li{
+    display: inline-block;
+    color: pink;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.header-container1 .menu-opc li a{
+    color: var(--color-black);
+}
+
+.header-container1 .menu-opc li::after{
+ color: var(--color-pink-farmasi);
+          
+}
+
+.header-container1 .menu-opc li a:hover{
+    color: var(--color-black);
+    font-weight: 400;
+}
+
+.header-container1 .menu-opc li:hover::after{
+    content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px; /* Mover la línea un poco más abajo */
+            width: 16px; /* 60% de ancho de la línea */
+            height: 3px; /* Grosor de la línea */
+            transform: translateX(-50%); /* Centrar la línea */
+            background-color: var(--color-pink-farmasi); /* Color */
+
+        }
+
+/* header 2 */
+
+.header-container2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 5px 0;
+    }
+
+.header-container2 .navbar {
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.header-container2 .nav-branding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.header-container2 .nav-branding  .img_logo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.header-container2 .menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+    
+.header-container2 .nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-right: 20px; /* Alinear el menÃº hacia la izquierda del Ã­cono de hamburguesa */
+}
+
+.header-container2 .menu-wrapper .nav-menu .nav-item a {
+    position: relative;
+    transition: color 0.3s ease-out;
+}
+
+
+.header-container2  .menu-wrapper .nav-menu .nav-item a:hover {
+color: orange;
+}
+
+.header-container2  .menu-wrapper .nav-menu .nav-item .btn_registro{
+    position: relative;
+    padding: 4px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--color-black);
+    color: white;
+    transition: color 0.3s;
+    background-color: var(--color-black);
+    font-size: 17px;
+}
+
+.header-container2 .nav-menu-mobile2 .nav-item a {
+    position: relative;
+    transition: color 0.3s ease-out;
+}
+
+.header-container2 .nav-menu-mobile2 .nav-item a:hover {
+    color: orange;
+}
+
+.header-container2 .menu-wrapper .hamburger2 {
+display: block;
+cursor: pointer;
+width: 25px; /* Fijar el tamaÃ±o del icono de hamburguesa */
+height: auto;
+}
+
+.header-container2 .menu-wrapper .hamburger2 .bar {
+display: block;
+width: 100%;
+height: 3px;
+margin: 5px auto;
+transition: all 0.3s ease;
+background-color: #010d43;
+}
+
+.header-container2 .menu-wrapper .hamburger2.active .bar:nth-child(2) {
+opacity: 0;
+}
+.header-container2 .menu-wrapper .hamburger2.active .bar:nth-child(1) {
+transform: translateY(8px) rotate(45deg);
+}
+.header-container2 .menu-wrapper .hamburger2.active .bar:nth-child(3) {
+transform: translateY(-8px) rotate(-45deg);
+}
+
+.header-container2 .nav-menu-mobile2 {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 80px;
+    left: -100%; /* Inicialmente fuera de la pantalla */
+    width: 100%; /* Ancho del 90% */
+    height: 100vh; /* Altura completa */
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: left 0.3s ease, opacity 0.3s ease; /* TransiciÃ³n para 'left' y 'opacity' */
+    padding-top: 0;
+    z-index: 200;
+    opacity: 0.2; /* MenÃº inicialmente invisible */
+    background-color: #f2f2f2;
+}
+
+/* Cuando el menÃº estÃ¡ activo, lo deslizamos a la vista */
+.header-container2 .nav-menu-mobile2.active {
+left: 0;
+opacity: 1;
+}
+
+.header-container2 .nav-menu-mobile2.inactive {
+left: -100%; /* MenÃº fuera de la pantalla */
+opacity: 0.2; /* Menu semi-transparente cuando estÃ¡ fuera de la vista */
+}
+.header-container2 .nav-menu-mobile2 .nav-item {
+    width: 100%;
+    padding: 8px 5%;
+    text-align: left;
+    display: inline-block;
+    color: pink;
+    font-size: 17px;
+    font-weight: 300;
+    position: relative;
+}
+
+.header-container2 .nav-menu-mobile2 .nav-item span {
+    color: #000;
+    font-weight: 400;
+    transition: 0.3s ease-out;
+    font-size: 17px;
+    }
+    
+    .header-container2 .nav-menu-mobile2 .nav-item a:hover {
+    color: orange;
+    }
+    
+    
+    /* Estilos para el acordeÃ³n */
+    .header-container2 .nav-menu-mobile2 .accordion-content {
+    display: none;
+    flex-direction: column;
+    padding-left: 20px;
+    }
+    
+    .header-container2 .nav-menu-mobile2 .nav-item .opc-submenu.active  > .accordion-content {
+    display: flex;
+    }
+    
+    .header-container2 .nav-menu-mobile2 .nav-item .opc-submenu .accordion-content li {
+    padding: 10px 0;
+    }
+    
+
+    /* Capa de superposición que bloqueará los elementos detrás del menú */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    display: none; /* Inicialmente no se muestra */
+    z-index: 2; /* Asegura que esté sobre los elementos del fondo pero debajo del menú */
+}
+
+/* Cuando el menú está activo, mostramos la capa de superposición */
+.header-container2 .nav-menu-mobile2.active ~ .overlay {
+    display: block; /* Mostrar la superposición */
+}
+
+/* Cuando el menú está activo, se desactiva el scroll en el fondo */
+body.menu-active {
+    overflow: hidden; /* Evita el scroll en el cuerpo */
+}
+
+
+
+
+@media(max-width: 768px) {
+    .header-container1{
+    display: none;
+    }
+    
+    
+    }
+    
+    
+    
+    @media(min-width: 769px) {
+    .header-container2 {
+        display: none; /* Oculta el menÃº mÃ³vil en pantallas grandes */
+    }
+    }
